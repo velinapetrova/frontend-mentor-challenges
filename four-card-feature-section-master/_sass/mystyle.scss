@@ -14,6 +14,10 @@
   font-weight: 200;
   text-align: center;
   color: hsl(229, 6%, 66%);
+
+  @media (min-width: 1025px) {
+    font-size: 2em;
+  }
 }
 
 .page-secondary-title {
@@ -22,6 +26,10 @@
   text-align: center;
   color: hsl(234, 12%, 34%);
   padding-bottom: 0.7em;
+
+  @media (min-width: 1025px) {
+    font-size: 2em;
+  }
 }
 
 .page-description {
@@ -29,10 +37,37 @@
   font-weight: 400;
   text-align: center;
   color: hsl(229, 6%, 66%);
+
+  @media (min-width: 768px) {
+    padding: 0 20%;
+  }
+
+  @media (min-width: 1025px) {
+    padding: 0 30%;
+  }
+
+  @media (min-width: 1439px) {
+    padding: 0 35%;
+  }
 }
 
 .page-content {
   padding-top: 5em;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5em;
+    align-items: center;
+  }
+
+  @media (min-width: 1025px) {
+    padding: 5em 10%;
+  }
+
+  @media (min-width: 1439px) {
+    padding: 5em 20%;
+  }
 }
 
 .card {
@@ -43,22 +78,22 @@
   margin-bottom: 1.8em;
   height: 10em;
   position: relative;
-}
 
-.card.border-cyan {
-  border-top-color: hsl(180, 62%, 55%);
-}
+  &.border-cyan {
+    border-top-color: hsl(180, 62%, 55%);
+  }
 
-.card.border-red {
-  border-top-color: hsl(0, 78%, 62%);
-}
+  &.border-red {
+    border-top-color: hsl(0, 78%, 62%);
+  }
 
-.card.border-orange {
-  border-top-color: hsl(34, 97%, 64%);
-}
+  &.border-orange {
+    border-top-color: hsl(34, 97%, 64%);
+  }
 
-.card.border-blue {
-  border-top-color: hsl(212, 86%, 64%);
+  &.border-blue {
+    border-top-color: hsl(212, 86%, 64%);
+  }
 }
 
 .card-title {
@@ -79,45 +114,4 @@
   width: 3.5em;
   right: 1.8em;
   bottom: 1.8em;
-}
-
-@media (min-width: 768px) {
-  .page-description {
-    padding: 0 20%;
-  }
-  
-  .page-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1.5em;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1025px) {
-  .page-primary-title {
-    font-size: 2em;
-  }
-
-  .page-secondary-title {
-    font-size: 2em;
-  }
-
-  .page-description {
-    padding: 0 30%;
-  }
-
-  .page-content {
-    padding: 5em 10%;
-  }
-}
-
-@media (min-width: 1439px) {
-  .page-content {
-    padding: 5em 20%;
-  }
-
-  .page-description {
-    padding: 0 35%;
-  }
 }

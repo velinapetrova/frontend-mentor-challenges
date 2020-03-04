@@ -1,0 +1,157 @@
+/* line 1, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.container {
+  font-size: 15px;
+  padding: 5em 2em 0 2em;
+}
+
+/* line 12, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.page-primary-title {
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  color: #a3a5ae;
+}
+
+@media (min-width: 1025px) {
+  /* line 12, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-primary-title {
+    font-size: 2em;
+  }
+}
+
+/* line 23, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.page-secondary-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  color: #4c4e61;
+  padding-bottom: 0.7em;
+}
+
+@media (min-width: 1025px) {
+  /* line 23, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-secondary-title {
+    font-size: 2em;
+  }
+}
+
+/* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.page-description {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: #a3a5ae;
+}
+
+@media (min-width: 768px) {
+  /* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-description {
+    padding: 0 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-description {
+    padding: 0 30%;
+  }
+}
+
+@media (min-width: 1439px) {
+  /* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-description {
+    padding: 0 35%;
+  }
+}
+
+/* line 54, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.page-content {
+  padding-top: 5em;
+}
+
+@media (min-width: 768px) {
+  /* line 54, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5em;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* line 54, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-content {
+    padding: 5em 10%;
+  }
+}
+
+@media (min-width: 1439px) {
+  /* line 54, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+  .page-content {
+    padding: 5em 20%;
+  }
+}
+
+/* line 73, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card {
+  box-shadow: 0px 10px 15px 5px #ebebeb;
+  border-radius: 0.3em;
+  padding: 1.8em;
+  border-top: 0.25em solid;
+  margin-bottom: 1.8em;
+  height: 10em;
+  position: relative;
+}
+
+/* line 82, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card.border-cyan {
+  border-top-color: #45d3d3;
+}
+
+/* line 86, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card.border-red {
+  border-top-color: #ea5353;
+}
+
+/* line 90, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card.border-orange {
+  border-top-color: #fcaf4a;
+}
+
+/* line 94, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card.border-blue {
+  border-top-color: #549ef2;
+}
+
+/* line 99, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4c4e61;
+  padding-bottom: 0.4em;
+}
+
+/* line 106, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card-description {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #a3a5ae;
+}
+
+/* line 112, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/four-card-feature-section-master/_sass/mystyle.scss */
+.card-icon {
+  position: absolute;
+  width: 3.5em;
+  right: 1.8em;
+  bottom: 1.8em;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
