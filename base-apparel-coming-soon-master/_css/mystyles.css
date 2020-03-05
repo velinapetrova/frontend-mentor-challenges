@@ -1,0 +1,175 @@
+/* line 8, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* line 14, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+header {
+  height: 4em;
+  margin: 2em 0 0 2em;
+}
+
+/* line 19, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+main {
+  background-image: linear-gradient(135deg, white, #fff5f5);
+}
+
+@media (min-width: 768px) {
+  /* line 19, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+/* line 28, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+section {
+  padding: 3em 2em;
+}
+
+@media (min-width: 768px) {
+  /* line 28, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+  section {
+    padding: 5em 3em;
+  }
+}
+
+/* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-hero-image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+  .lp-hero-image {
+    width: auto;
+  }
+}
+
+/* line 43, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-hero-image.mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  /* line 43, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+  .lp-hero-image.mobile {
+    display: none;
+  }
+}
+
+/* line 51, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-hero-image.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 51, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+  .lp-hero-image.desktop {
+    display: block;
+  }
+}
+
+/* line 59, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-title-light {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: #ce9797;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+/* line 68, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-title-dark {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #413a3a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+/* line 77, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-description {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #ce9797;
+  padding: 1.5em 1em;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+/* line 86, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-form {
+  display: flex;
+  padding: 1em;
+  position: relative;
+}
+
+/* line 92, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-form-input-field {
+  padding: 1.2em 1.5em;
+  border: 1px solid #ce9797;
+  background: none;
+  border-radius: 1.5em;
+  color: #413a3a;
+  width: 100%;
+}
+
+/* line 101, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.invalid {
+  border-color: #f96262;
+}
+
+/* line 105, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+input:focus {
+  outline: none;
+}
+
+/* line 109, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+input::placeholder {
+  color: #ce9797;
+  opacity: 1;
+}
+
+/* line 114, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-form-btn {
+  background-image: linear-gradient(35deg, #f8bfbf, #ee8c8c);
+  padding: 0.6em 1.6em 0.66em 1.8em;
+  border-radius: 2.5em;
+  position: absolute;
+  right: 0.9em;
+}
+
+/* line 121, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-form-btn :hover {
+  cursor: pointer;
+}
+
+/* line 126, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-form-error-icon {
+  position: absolute;
+  right: 5.5em;
+  top: 1.7em;
+  width: 1.1em;
+}
+
+/* line 133, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.lp-form-error-msg {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  top: 5.5em;
+  left: 2.6em;
+  color: #ce9797;
+}
+
+/* line 142, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/base-apparel-coming-soon-master/_scss/mystyles.scss */
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=mystyles.css.map */

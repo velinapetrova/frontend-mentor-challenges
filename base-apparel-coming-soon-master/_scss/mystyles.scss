@@ -1,0 +1,144 @@
+$desaturated-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+$gradient-one: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient-two: linear-gradient(35deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  height: 4em;
+  margin: 2em 0 0 2em;
+}
+
+main {
+  background-image: $gradient-one;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+section {
+  padding: 3em 2em;
+  @media (min-width: 768px) {
+    padding: 5em 3em;
+  }
+}
+
+.lp-hero-image {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.lp-hero-image.mobile {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.lp-hero-image.desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.lp-title-light {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: $desaturated-red;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.lp-title-dark {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: $dark-grayish-red;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.lp-description {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: $desaturated-red;
+  padding: 1.5em 1em;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.lp-form {
+  display: flex;
+  padding: 1em;
+  position: relative;
+}
+
+.lp-form-input-field {
+  padding: 1.2em 1.5em;
+  border: 1px solid $desaturated-red;
+  background: none;
+  border-radius: 1.5em;
+  color: $dark-grayish-red;
+  width: 100%
+}
+
+.invalid {
+  border-color: $soft-red;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: $desaturated-red;
+  opacity: 1;
+}
+
+.lp-form-btn {
+  background-image: linear-gradient(35deg, #f8bfbf, #ee8c8c);
+  padding: 0.6em 1.6em 0.66em 1.8em;
+  border-radius: 2.5em;
+  position: absolute;
+  right: 0.9em;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.lp-form-error-icon {
+  position: absolute;
+  right: 5.5em;
+  top: 1.7em;
+  width: 1.1em;
+}
+
+.lp-form-error-msg {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  top: 5.5em;
+  left: 2.6em;
+  color: $desaturated-red;
+}
+
+.hidden {
+  display: none;
+}

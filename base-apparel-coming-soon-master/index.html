@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_css/mystyles.css">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.svg"/>
+  </header>
+  <main>
+    <img class="lp-hero-image mobile" src="images/hero-mobile.jpg"/>
+    <img class="lp-hero-image desktop" src="images/hero-desktop.jpg"/>
+    <section>
+      <hgroup>
+        <h1 class="lp-title-light">We're</h1>
+        <h1 class="lp-title-dark">coming soon</h1>
+      </hgroup>
+      <p class="lp-description">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="lp-form" novalidate>
+        <input class="lp-form-input-field" 
+          required
+          type="email"
+          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          size="30"
+          placeholder="Email Address"
+          oninvalid="setCustomValidity('Please provide a valid email')"/>
+        <img class="lp-form-error-icon hidden" src="images/icon-error.svg"/>
+        <img class="lp-form-btn"
+          src="images/icon-arrow.svg"/>
+        <span class="lp-form-error-msg hidden">Please provide a valid email</span>
+      </form>
+    </section>
+  </main>
+  <script>
+    const email = document.querySelector(".lp-form-input-field");
+    const button = document.querySelector(".lp-form-btn");
+    const errorIcon = document.querySelector(".lp-form-error-icon");
+    const errorMsg = document.querySelector(".lp-form-error-msg");
+
+    button.addEventListener('click', function() {
+      if (!email.validity.valid) {
+        errorIcon.classList.remove("hidden");
+        errorMsg.classList.remove("hidden");
+        email.classList.add("invalid");
+      }
+    });
+
+    email.addEventListener('click', function() {
+      errorIcon.classList.add("hidden");
+      errorMsg.classList.add("hidden");
+      email.classList.remove("invalid");
+    })
+  </script>
+</body>
+</html>
