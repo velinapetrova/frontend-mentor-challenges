@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_css/mystyle.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="description">
+        See how experienced developers solve problems in real-time. 
+        Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section>
+      <div class="offer">
+        <span class="highligh-text">Try it free for 7 days</span> then $20/mo. thereafter
+      </div>
+      <form>
+        <input type="text" class="input-field" name="firstName" placeholder="First Name" required/>
+        <div class="input-error hidden">
+          <span class="message"></span>
+          <img class="icon" src="images/icon-error.svg"/>
+        </div>
+        <input type="text" class="input-field" name="lastName" placeholder="Last Name" required/>
+        <div class="input-error hidden">
+          <span class="message"></span>
+          <img class="icon" src="images/icon-error.svg"/>
+        </div>
+        <input type="email" class="input-field" 
+          name="email" placeholder="Email Address" 
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+        <div class="input-error hidden">
+          <span class="message"></span>
+          <img class="icon" src="images/icon-error.svg"/>
+        </div>
+        <input type="password" class="input-field" 
+          name="password" placeholder="Password" 
+          pattern=".{8,}" title="Eight or more characters"
+          required />
+        <div class="input-error hidden">
+          <span class="message"></span>
+          <img class="icon" src="images/icon-error.svg"/>
+        </div>
+        <input type="button" value="Claim your free trial"/>
+        <div class="disclaimer">
+          By clicking the button, you are agreeing to <br/>our <a class="terms-url" href="#">Terms and Services</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script type="text/javascript" src="custom.js"></script>
+</body>
+</html>

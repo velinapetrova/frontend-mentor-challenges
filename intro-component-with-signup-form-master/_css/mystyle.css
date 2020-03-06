@@ -1,0 +1,193 @@
+/* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* line 12, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+body {
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-mobile.png");
+}
+
+@media (min-width: 376px) {
+  /* line 12, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+}
+
+/* line 21, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+main {
+  padding: 5em 1em;
+}
+
+@media (min-width: 768px) {
+  /* line 21, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 8em 5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 21, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+  main {
+    padding: 8em;
+  }
+}
+
+/* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+section {
+  padding-bottom: 3em;
+}
+
+@media (min-width: 768px) {
+  /* line 39, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+  section:first-child {
+    max-width: 28em;
+    padding: 5em 3em 0 0;
+  }
+}
+
+/* line 46, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  padding: 0 1em;
+}
+
+@media (min-width: 768px) {
+  /* line 46, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+  h1 {
+    padding: 0;
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+/* line 60, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.description {
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding-top: 1em;
+}
+
+@media (min-width: 768px) {
+  /* line 60, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+  .description {
+    padding-top: 1.5em;
+    text-align: left;
+  }
+}
+
+/* line 73, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.offer {
+  background-color: #6055a5;
+  border-radius: 0.8em;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 1em 4.8em;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5em;
+}
+
+/* line 83, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.offer .highligh-text {
+  font-weight: 600;
+}
+
+/* line 88, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+form {
+  background-color: white;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25em;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 97, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+input {
+  margin-bottom: 1.5em;
+  padding: 1em 2em;
+  border: 1px solid #b9b6d3;
+  border-radius: 0.5em;
+}
+
+/* line 103, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+input:focus {
+  outline: none;
+}
+
+/* line 107, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+input::placeholder {
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* line 112, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+input[type="button"] {
+  background-color: #38cc8c;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+}
+
+/* line 120, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+input.invalid {
+  margin-bottom: 2.5em;
+  border: 1px solid #ff7a7a;
+}
+
+/* line 126, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.input-error {
+  position: relative;
+}
+
+/* line 129, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.input-error .message {
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+  font-size: 0.6em;
+  color: #ff7a7a;
+}
+
+/* line 137, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.input-error .icon {
+  position: absolute;
+  right: 1.25em;
+  bottom: 2.2em;
+}
+
+/* line 144, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.disclaimer {
+  text-align: center;
+  color: #b9b6d3;
+  font-size: 0.6em;
+  padding: 0 1.5em;
+}
+
+/* line 151, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.terms-url {
+  color: #ff7a7a;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 158, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/intro-component-with-signup-form-master/_scss/mystyle.scss */
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
