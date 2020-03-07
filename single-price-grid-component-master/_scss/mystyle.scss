@@ -1,0 +1,118 @@
+$light-cyan: hsl(179, 62%, 43%);
+$dark-cyan: #259d9b;
+$yellow: hsl(71, 73%, 54%);
+$grey: hsl(204, 43%, 93%);
+$blue: hsl(218, 22%, 67%);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  background-color: $grey;
+}
+
+main {
+  @media (min-width: 768px) {
+    padding: 10%;
+  }
+  @media (min-width: 1024px) {
+    padding: 10% 15%;
+  }
+  @media (min-width: 1440px) {
+    padding: 10% 20%;
+  }
+}
+
+.two-section-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+  }  
+}
+
+section {
+  padding: 1.5em;
+}
+
+section.white {
+  background-color: white;
+
+  h2 {
+    color: $light-cyan;
+    font-weight: 700;
+    padding-bottom: 1em;
+
+  }
+
+  h3 {
+    color: $yellow;
+    padding-bottom: 1em;
+  }
+
+  p {
+    color: $blue;
+    padding-bottom: 1em;
+    line-height: 1.5em;
+  }
+}
+
+section.dark-cyan {
+  @media (min-width: 768px) {
+    flex-grow: 1;
+  }
+
+  color: white;
+  background-color: $dark-cyan;
+
+  .offer {
+    margin-top: 1em;
+  }
+
+  .offer-highlight {
+    font-weight: 700;
+    font-size: 2.2em;
+    padding-right: 0.2em
+  }
+
+  .offer-period {
+    vertical-align: super;
+    font-weight: 300;
+    color: $grey;
+  }
+
+  .offer-description {
+    display: block;
+    padding: 0.5em 0;
+    color: $grey;
+  }
+
+  .offer-btn {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.3em;
+    padding: 0.8em;
+    margin-top: 1em;
+    background-color: $yellow;
+  }
+}
+
+section.light-cyan {
+  @media (min-width: 768px) {
+    flex-grow: 1;
+  }
+
+  background-color: $light-cyan;
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    padding: 1em 0;
+    color: $grey;
+    line-height: 1.2em;
+  }
+}
