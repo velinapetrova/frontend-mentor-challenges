@@ -1,0 +1,103 @@
+$blue: hsl(223, 87%, 63%);
+$light-blue: hsl(223, 100%, 88%);
+$dark-blue: hsl(209, 33%, 12%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;;
+}
+
+main {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.logo {
+  padding: 2em;
+}
+
+.title {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: $gray;
+
+  .highlight {
+    font-size: 1em;
+    font-weight: 600;
+    color: $dark-blue;
+  }
+}
+
+.subtitle {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: $dark-blue;
+  padding: 1em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+
+  input {
+    padding: 0.9em 0;
+    border-radius: 1.5em;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid $blue;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.invalid {
+      margin-bottom: 0;
+      border: 1px solid $light-red;
+    }
+  }
+
+  input[type=email] {
+    padding-left: 2em;
+  }
+
+  input[type=button] {
+    background-color: $blue;
+    color: white;
+    font-weight: 600;
+  }
+
+  .error-message {
+    font-size: 0.7em;
+    color: $light-red;
+    padding: 0.5em 0 1em 0;
+  }
+}
+
+.dashboard-image {
+  max-width: 100%;
+}
+
+.social-media-icons {
+  padding: 4em 0 1em 0;
+}
+
+.fab {
+  color: $blue;
+  font-size: 1.5em;
+  padding: 0.2em;
+}
+
+.copyright {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: $gray;
+}
+
+.hidden {
+  display: none;
+}

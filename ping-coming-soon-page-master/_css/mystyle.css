@@ -1,0 +1,117 @@
+/* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* line 14, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+main {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+/* line 19, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.logo {
+  padding: 2em;
+}
+
+/* line 23, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.title {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #969696;
+}
+
+/* line 28, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.title .highlight {
+  font-size: 1em;
+  font-weight: 600;
+  color: #151f29;
+}
+
+/* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.subtitle {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #151f29;
+  padding: 1em 0;
+}
+
+/* line 42, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+/* line 47, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form input {
+  padding: 0.9em 0;
+  border-radius: 1.5em;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #4f7df3;
+}
+
+/* line 54, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form input:focus {
+  outline: none;
+}
+
+/* line 58, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form input.invalid {
+  margin-bottom: 0;
+  border: 1px solid #ff5263;
+}
+
+/* line 64, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form input[type=email] {
+  padding-left: 2em;
+}
+
+/* line 68, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form input[type=button] {
+  background-color: #4f7df3;
+  color: white;
+  font-weight: 600;
+}
+
+/* line 74, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+form .error-message {
+  font-size: 0.7em;
+  color: #ff5263;
+  padding: 0.5em 0 1em 0;
+}
+
+/* line 81, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.dashboard-image {
+  max-width: 100%;
+}
+
+/* line 85, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.social-media-icons {
+  padding: 4em 0 1em 0;
+}
+
+/* line 89, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.fab {
+  color: #4f7df3;
+  font-size: 1.5em;
+  padding: 0.2em;
+}
+
+/* line 95, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.copyright {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #969696;
+}
+
+/* line 101, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/ping-coming-soon-page-master/_scss/mystyle.scss */
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
