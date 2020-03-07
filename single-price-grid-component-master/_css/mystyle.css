@@ -1,0 +1,145 @@
+/* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+/* line 13, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+body {
+  background-color: #e5eff5;
+}
+
+@media (min-width: 768px) {
+  /* line 17, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+  main {
+    padding: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 17, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+  main {
+    padding: 10% 15%;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 17, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+  main {
+    padding: 10% 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 29, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+  .two-section-wrapper {
+    display: flex;
+  }
+}
+
+/* line 35, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section {
+  padding: 1.5em;
+}
+
+/* line 39, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.white {
+  background-color: white;
+}
+
+/* line 42, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.white h2 {
+  color: #2ab2af;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+/* line 49, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.white h3 {
+  color: #c0df34;
+  padding-bottom: 1em;
+}
+
+/* line 54, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.white p {
+  color: #98a6bd;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+/* line 61, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.dark-cyan {
+  color: white;
+  background-color: #259d9b;
+}
+
+@media (min-width: 768px) {
+  /* line 61, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+  section.dark-cyan {
+    flex-grow: 1;
+  }
+}
+
+/* line 69, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.dark-cyan .offer {
+  margin-top: 1em;
+}
+
+/* line 73, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.dark-cyan .offer-highlight {
+  font-weight: 700;
+  font-size: 2.2em;
+  padding-right: 0.2em;
+}
+
+/* line 79, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.dark-cyan .offer-period {
+  vertical-align: super;
+  font-weight: 300;
+  color: #e5eff5;
+}
+
+/* line 85, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.dark-cyan .offer-description {
+  display: block;
+  padding: 0.5em 0;
+  color: #e5eff5;
+}
+
+/* line 91, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.dark-cyan .offer-btn {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 0.3em;
+  padding: 0.8em;
+  margin-top: 1em;
+  background-color: #c0df34;
+}
+
+/* line 102, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.light-cyan {
+  background-color: #2ab2af;
+}
+
+@media (min-width: 768px) {
+  /* line 102, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+  section.light-cyan {
+    flex-grow: 1;
+  }
+}
+
+/* line 109, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.light-cyan h3 {
+  color: white;
+}
+
+/* line 113, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/single-price-grid-component-master/_scss/mystyle.scss */
+section.light-cyan p {
+  padding: 1em 0;
+  color: #e5eff5;
+  line-height: 1.2em;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
