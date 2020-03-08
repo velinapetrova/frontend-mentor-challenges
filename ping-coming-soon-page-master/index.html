@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_css/mystyle.css">
+
+  <script src="https://kit.fontawesome.com/a68be49ec6.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <main>
+    <img class="logo" src="images/logo.svg"/>
+    <h1 class="title">
+      We are launching <span class="highlight">soon!</span>
+    </h1>
+    <p class="subtitle">Subscribe and get notified</p>
+    <form>
+      <div class="email-wrapper">
+        <input type="email" 
+        name="email" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        placeholder="Your email address..." 
+        required />
+        <div class="error-message hidden"></div>
+      </div>
+      <input type="button" 
+        name="submit" 
+        value="Notify Me"/>
+    </form>
+    <img class="dashboard-image" src="images/illustration-dashboard.png" />
+    <div class="social-media-icons">
+      <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </div>
+  </main>
+  <script>
+    email = document.querySelector("input[type=email]");
+    button = document.querySelector("input[type=button]");
+
+    button.addEventListener("click", () => {
+      if (email.validity.valid) return;
+      email.classList.add("invalid");
+      button.classList.add("invalid");
+      email.nextElementSibling.classList.remove("hidden");
+      email.nextElementSibling.innerHTML = email.validationMessage;
+    });
+
+    email.addEventListener("click", () => {
+      email.classList.remove("invalid");
+      button.classList.remove("invalid");
+      email.nextElementSibling.classList.add("hidden");
+    })
+  </script>
+</body>
+</html>
