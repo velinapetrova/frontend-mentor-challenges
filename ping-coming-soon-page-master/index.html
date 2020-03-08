@@ -19,21 +19,23 @@
     </h1>
     <p class="subtitle">Subscribe and get notified</p>
     <form>
-      <input type="email" 
+      <div class="email-wrapper">
+        <input type="email" 
         name="email" 
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
         placeholder="Your email address..." 
         required />
-      <span class="error-message hidden"></span>
+        <div class="error-message hidden"></div>
+      </div>
       <input type="button" 
         name="submit" 
         value="Notify Me"/>
     </form>
     <img class="dashboard-image" src="images/illustration-dashboard.png" />
     <div class="social-media-icons">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+      <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="copyright">
       &copy; Copyright Ping. All rights reserved.
@@ -46,12 +48,14 @@
     button.addEventListener("click", () => {
       if (email.validity.valid) return;
       email.classList.add("invalid");
+      button.classList.add("invalid");
       email.nextElementSibling.classList.remove("hidden");
       email.nextElementSibling.innerHTML = email.validationMessage;
     });
 
     email.addEventListener("click", () => {
       email.classList.remove("invalid");
+      button.classList.remove("invalid");
       email.nextElementSibling.classList.add("hidden");
     })
   </script>
