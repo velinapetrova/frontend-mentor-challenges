@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "mystyles.css",
+	"sources": [
+		"../_scss/mystyles.scss"
+	],
+	"sourcesContent": [
+		"$violet: hsl(257, 40%, 49%);"
+	],
+	"names": [],
+	"mappings": ""
+}

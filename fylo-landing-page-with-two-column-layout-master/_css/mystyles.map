@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "mystyles.css",
+	"sources": [
+		"../_scss/mystyles.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
