@@ -3,3 +3,292 @@ $pale-cyan: hsl(193, 100%, 96%);
 $dark-cyan: hsl(192, 100%, 9%);
 $grayish-blue: hsl(208, 11%, 55%);
 
+%button {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 2em;
+  box-shadow: 0 0 0.6em 0 #c1c1c1;
+}
+
+%pink-button {
+  color: white;
+  background-color: $pink;
+}
+
+%white-button {
+  color: $dark-cyan;
+  background-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  padding: 2em 1.5em;
+  background-color: $pale-cyan;
+  background-image: url("../images/bg-hero-mobile.svg");
+
+  @media (min-width: 768px) {
+    padding: 2em 5em;
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3em;
+
+  .logo {
+    width: 7em;
+    height: 1.2em;
+    padding-top: 0.2em;
+
+    @media (min-width: 1024px) {
+      width: 10em;
+      height: 1.7em;
+      padding-top: 0.5em;
+    }
+  }
+
+  a {
+    @extend %button;
+    @extend %white-button;
+    padding: 0.5em 1.8em;
+
+    @media (min-width: 1024px) {
+      padding: 1em 3.5em;
+    }
+  }
+}
+
+main {
+  padding: 2em 1.5em 10em 1.5em;
+}
+
+footer {
+  color: white;
+  background-color: $dark-cyan;
+  padding: 10em 1.5em 2em 1.5em;
+  font-family: 'Open Sans', sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 12em 5em 2em 5em;
+  }
+
+  .column-layout {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 2em;
+      justify-items: center;
+      padding: 1em 0;
+    }
+  }
+
+  .logo {
+    width: 9em;
+  }
+
+  .link {
+    display: block;
+    padding: 0.5em 0;
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-info {
+    padding: 1em 0;
+  }
+
+  .contact-info-row {
+    display: flex;
+    padding-bottom: 1em;
+    
+    img {
+      padding-right: 1.5em;
+      max-height: 1em;
+    }
+  }
+
+  .social-media-icons {
+    text-align: center;
+    padding: 1em;
+  }
+
+  .fab {
+    color: white;
+    padding: 0.25em;
+    font-size: 1.3em;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
+
+section.hero {
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .content {
+    padding: 2em 4em 2em 2em;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: $dark-cyan;
+    padding: 0.5em 0;
+
+    @media (min-width: 1024px) {
+      text-align: left;
+      font-size: 2.3em;
+    }
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    color: $dark-cyan;
+    padding: 0.5em 0;
+
+    @media (min-width: 1024px) {
+      text-align: left;
+      font-size: 1.1em;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    @extend %button;
+    @extend %pink-button;
+    display: block;
+    font-size: 0.8em;
+    padding: 1em 0;
+    margin: 2em;
+
+    @media (min-width: 1024px) {
+      display: inline-block;
+      padding: 1.2em 4em;
+      margin: 2em 0;
+    }
+  }
+}
+
+article {
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 0.6em 0 #c1c1c1;
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: center;
+    color: $dark-cyan;
+    padding: 0.5em 1em;
+
+    @media (min-width: 1024px) {
+      font-size: 1.8em;
+      text-align: left;
+      padding: 0.5em;
+    }
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    color: $grayish-blue;
+    padding: 0.5em 1em;
+
+    @media (min-width: 1024px) {
+      text-align: left;
+      padding-right: 3em;
+    }
+  }
+
+  img {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      width: 80%;
+    }
+  }
+}
+
+article.card {
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 2em 5em;
+    padding: 2em 2em 2em 7%;
+
+    &.reverse {
+      img {
+        order: 2;
+      }
+
+      .content {
+        order: 1;
+      }
+    }
+  }
+}
+
+article.cta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  margin: 0 1em;
+  padding: 2em 0;
+  font-size: 0.9em;
+
+  @media (min-width: 1024px) {
+    margin: 4% 22%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  a {
+    @extend %button;
+    @extend %pink-button;
+    display: block;
+    padding: 1em 0;
+    margin: 2em;
+
+    @media (min-width: 1024px) {
+      padding: 1.3em 0;
+      margin: 1em 22%;
+      font-size: 1.1em;
+    }
+  }
+}
