@@ -1,1 +1,129 @@
 $violet: hsl(257, 40%, 49%);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+body {
+  background: $violet url("../images/bg-mobile.svg") top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em;
+
+  @media (min-width: 768px) {
+    background: $violet url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em;
+  }
+}
+
+.logo {
+  width: 40%;
+
+  @media (min-width: 768px) {
+    width: 15%;
+  }
+}
+
+main {
+  padding-top: 4em;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: 1178px) {
+    align-items: start;
+  }
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content {
+  @media (min-width: 768px) {
+    padding-left: 7%;
+  }
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 1em 0;
+
+  @media (min-width: 768px) {
+    font-size: 2.2em;
+    text-align: left;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2.5em;
+  }
+}
+
+.description {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 1em 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.5em;
+  }
+}
+
+.link {
+  display: block;
+  color: $violet;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 0.8em 0;
+  margin: 1.8em 10%;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    padding: 1em 3em;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.2em;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.fab {
+  font-size: 1.5em;
+  margin: 0 0.25em;
+
+  @media (min-width: 768px) {
+    font-size: 2em;
+  }
+}
+

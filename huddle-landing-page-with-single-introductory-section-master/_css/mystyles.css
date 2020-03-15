@@ -1,2 +1,175 @@
+/* line 3, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/* line 11, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+body {
+  background: #674baf url("../images/bg-mobile.svg") top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em;
+}
+
+@media (min-width: 768px) {
+  /* line 11, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  body {
+    background: #674baf url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5em;
+  }
+}
+
+/* line 25, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+.logo {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  /* line 25, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .logo {
+    width: 15%;
+  }
+}
+
+/* line 33, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+main {
+  padding-top: 4em;
+}
+
+@media (min-width: 768px) {
+  /* line 33, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1178px) {
+  /* line 33, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  main {
+    align-items: start;
+  }
+}
+
+/* line 47, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+.content-image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 51, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .content {
+    padding-left: 7%;
+  }
+}
+
+/* line 57, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 57, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .title {
+    font-size: 2.2em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 57, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .title {
+    font-size: 2.5em;
+  }
+}
+
+/* line 74, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+.description {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 74, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .description {
+    font-size: 1.3em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 74, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .description {
+    font-size: 1.5em;
+  }
+}
+
+/* line 90, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+.link {
+  display: block;
+  color: #674baf;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 0.8em 0;
+  margin: 1.8em 10%;
+}
+
+@media (min-width: 768px) {
+  /* line 90, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .link {
+    display: inline-block;
+    padding: 1em 3em;
+    font-size: 1em;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 90, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .link {
+    font-size: 1.2em;
+  }
+}
+
+/* line 112, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+footer {
+  text-align: center;
+  padding: 1.5em;
+}
+
+@media (min-width: 768px) {
+  /* line 112, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  footer {
+    text-align: right;
+  }
+}
+
+/* line 121, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+.fab {
+  font-size: 1.5em;
+  margin: 0 0.25em;
+}
+
+@media (min-width: 768px) {
+  /* line 121, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/huddle-landing-page-with-single-introductory-section-master/_scss/mystyles.scss */
+  .fab {
+    font-size: 2em;
+  }
+}
 
 /*# sourceMappingURL=mystyles.css.map */
