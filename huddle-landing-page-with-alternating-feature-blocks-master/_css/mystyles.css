@@ -1,0 +1,303 @@
+nav a, section.hero a, article.cta a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 2em;
+  box-shadow: 0 0 0.6em 0 #c1c1c1;
+}
+
+section.hero a, article.cta a {
+  color: white;
+  background-color: #ff52bf;
+}
+
+nav a {
+  color: #00252e;
+  background-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  padding: 2em 1.5em;
+  background-color: #ebfbff;
+  background-image: url("../images/bg-hero-mobile.svg");
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2em 5em;
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3em;
+}
+
+nav .logo {
+  width: 7em;
+  height: 1.2em;
+  padding-top: 0.2em;
+}
+
+@media (min-width: 1024px) {
+  nav .logo {
+    width: 10em;
+    height: 1.7em;
+    padding-top: 0.5em;
+  }
+}
+
+nav a {
+  padding: 0.5em 1.8em;
+}
+
+@media (min-width: 1024px) {
+  nav a {
+    padding: 1em 3.5em;
+  }
+}
+
+main {
+  padding: 2em 1.5em 10em 1.5em;
+}
+
+footer {
+  color: white;
+  background-color: #00252e;
+  padding: 10em 1.5em 2em 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 12em 5em 2em 5em;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    justify-items: center;
+    padding: 1em 0;
+  }
+}
+
+footer .logo {
+  width: 9em;
+}
+
+footer .link {
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: white;
+}
+
+footer .contact-info {
+  padding: 1em 0;
+}
+
+footer .contact-info-row {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+footer .contact-info-row img {
+  padding-right: 1.5em;
+  max-height: 1em;
+}
+
+footer .social-media-icons {
+  text-align: center;
+  padding: 1em;
+}
+
+footer .fab {
+  color: white;
+  padding: 0.25em;
+  font-size: 1.3em;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+@media (min-width: 1024px) {
+  section.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+section.hero .content {
+  padding: 2em 4em 2em 2em;
+}
+
+section.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: #00252e;
+  padding: 0.5em 0;
+}
+
+@media (min-width: 1024px) {
+  section.hero h1 {
+    text-align: left;
+    font-size: 2.3em;
+  }
+}
+
+section.hero p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  color: #00252e;
+  padding: 0.5em 0;
+}
+
+@media (min-width: 1024px) {
+  section.hero p {
+    text-align: left;
+    font-size: 1.1em;
+  }
+}
+
+section.hero img {
+  width: 100%;
+}
+
+section.hero a {
+  display: block;
+  font-size: 0.8em;
+  padding: 1em 0;
+  margin: 2em;
+}
+
+@media (min-width: 1024px) {
+  section.hero a {
+    display: inline-block;
+    padding: 1.2em 4em;
+    margin: 2em 0;
+  }
+}
+
+article {
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 0.6em 0 #c1c1c1;
+}
+
+article h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  text-align: center;
+  color: #00252e;
+  padding: 0.5em 1em;
+}
+
+@media (min-width: 1024px) {
+  article h2 {
+    font-size: 1.8em;
+    text-align: left;
+    padding: 0.5em;
+  }
+}
+
+article p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  color: #808d99;
+  padding: 0.5em 1em;
+}
+
+@media (min-width: 1024px) {
+  article p {
+    text-align: left;
+    padding-right: 3em;
+  }
+}
+
+article img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  article img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  article.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 2em 5em;
+    padding: 2em 2em 2em 7%;
+  }
+  article.card.reverse img {
+    order: 2;
+  }
+  article.card.reverse .content {
+    order: 1;
+  }
+}
+
+article.cta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  margin: 0 1em;
+  padding: 2em 0;
+  font-size: 0.9em;
+}
+
+@media (min-width: 1024px) {
+  article.cta {
+    margin: 4% 22%;
+  }
+}
+
+article.cta h2 {
+  text-align: center;
+}
+
+article.cta a {
+  display: block;
+  padding: 1em 0;
+  margin: 2em;
+}
+
+@media (min-width: 1024px) {
+  article.cta a {
+    padding: 1.3em 0;
+    margin: 1em 22%;
+    font-size: 1.1em;
+  }
+}
