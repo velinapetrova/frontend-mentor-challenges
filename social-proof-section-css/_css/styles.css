@@ -1,0 +1,206 @@
+/* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  padding: 4em 1em;
+  background: url("/images/bg-pattern-top-mobile.svg") top center no-repeat;
+}
+
+@media (min-width: 768px) {
+  /* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  body {
+    padding: 3em;
+    background: url("/images/bg-pattern-top-desktop.svg") top center no-repeat;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 7, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  body {
+    padding: 5em 7em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 23, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .social-proof-info-wrapper {
+    max-width: 25em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 30, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .social-proof-info-wrapper {
+    max-width: 30em;
+  }
+}
+
+/* line 40, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.title {
+  text-align: center;
+  color: #502050;
+}
+
+@media (min-width: 768px) {
+  /* line 40, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .title {
+    font-size: 3rem;
+    text-align: left;
+  }
+}
+
+/* line 50, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.description {
+  text-align: center;
+  color: #937b92;
+}
+
+@media (min-width: 768px) {
+  /* line 50, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .description {
+    text-align: left;
+  }
+}
+
+/* line 59, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.ratings-wrapper {
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 59, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .ratings-wrapper {
+    position: relative;
+  }
+}
+
+/* line 66, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.rating-wrapper {
+  background-color: #f7f2f7;
+  border-radius: 0.5rem;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+@media (min-width: 1170px) {
+  /* line 66, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .rating-wrapper {
+    display: flex;
+    position: relative;
+  }
+  /* line 77, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .rating-wrapper:nth-child(1) {
+    right: 6em;
+  }
+  /* line 81, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .rating-wrapper:nth-child(2) {
+    right: 4em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 87, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .rating-stars {
+    padding: 0.2em 1em 0 0;
+  }
+}
+
+/* line 93, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.rating-star-img {
+  padding: 0.2em;
+}
+
+/* line 97, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.rating-description {
+  color: #502050;
+  font-weight: 700;
+  padding-top: 0.5em;
+}
+
+/* line 103, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.reviews-wrapper {
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 103, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .reviews-wrapper {
+    display: flex;
+    padding: 4em 0;
+    position: relative;
+  }
+}
+
+/* line 113, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.review-wrapper {
+  background-color: #502050;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 2em;
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 113, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .review-wrapper {
+    margin: 0 1em;
+    position: relative;
+  }
+  /* line 124, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .review-wrapper:first-child {
+    margin: 0 1em 0 0;
+  }
+  /* line 128, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .review-wrapper:nth-child(2) {
+    top: 1em;
+  }
+  /* line 132, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+  .review-wrapper:last-child {
+    margin: 0 0 0 1em;
+    top: 2em;
+  }
+}
+
+/* line 139, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.reviewer-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+/* line 146, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.reviewer-img {
+  width: 3em;
+  border-radius: 5em;
+  margin-right: 2em;
+}
+
+/* line 152, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.reviewer-name {
+  font-weight: 700;
+}
+
+/* line 155, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.reviewer-status {
+  color: #ee68a4;
+  font-weight: 400;
+}
+
+/* line 160, ../../../../../Users/mindvalley/Projects/frontend-mentor-challenges/social-proof-section-css/_scss/styles.scss */
+.review {
+  padding-top: 2em;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
